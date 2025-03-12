@@ -103,30 +103,13 @@ function App() {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React buscar
-        </a>
-      </header>
-=======
     <div>
       <h2 className="text-center mt-5 mb-5">Trailer Popular Movies</h2>
 
       <form className="container mb-4" onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
-          placeholder="buscar"
+          placeholder="search"
           value={searchKey}
           onKeyDown={handleSearchChange}
           onChange={(e) => setSearchKey(e.target.value)}
@@ -210,7 +193,6 @@ function App() {
           ))}
         </div>
       </div>
->>>>>>> 5b92a505d46ae06ffd7fdd12423ced3b73e300dd
     </div>
   );
 }
